@@ -115,7 +115,7 @@ abstract class Conversion
      */
     public function convert()
     {
-        $value = ( $this->value * $this->getRate($this->from) ) / $this->getRate($this->dest);
+        $value = ($this->value * $this->getRate($this->from)) / $this->getRate($this->dest);
 
         return round($value);
     }
@@ -123,7 +123,7 @@ abstract class Conversion
     /**
      * Documentation for this.
      */
-    public function readable($append = NULL)
+    public function readable($append = null)
     {
         $value = $this->convert();
 
